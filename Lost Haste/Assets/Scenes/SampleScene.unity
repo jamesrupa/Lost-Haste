@@ -176,7 +176,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 543363053}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &121677805
 MonoBehaviour:
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 121677803}
   speed: 12
-  gravity: -26.5
+  gravity: -32
   jumpHeight: 3
   groundCheck: {fileID: 543363053}
   groundDistance: 0.4
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcc65f9beecceb4f944e4032c5e7563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 450
+  mouseSensitivity: 900
 --- !u!1 &543363052
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,5 +580,5 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

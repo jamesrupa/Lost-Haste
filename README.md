@@ -1,2 +1,2 @@
 # Lost-Haste
-Fast Paced MOBA Game
+Open World Survival Craft Game
