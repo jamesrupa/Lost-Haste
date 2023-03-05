@@ -219,3 +219,115 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 165.195820 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Materials/M Conifer Bark Simple BODT.mat
+  artifactKey: Guid(fcbc9e998124d414da7cb0d951f649a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Materials/M Conifer Bark Simple BODT.mat using Guid(fcbc9e998124d414da7cb0d951f649a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63389ea15f7a7eae1160c7126452ebd1') in 0.671370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.685492 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset
+  artifactKey: Guid(14f4181ca612e43c9b344f073e03a7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Bark Array [Normal] [AO] [Specular].asset using Guid(14f4181ca612e43c9b344f073e03a7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d291799fc596ca17e66750598a021cf') in 0.139786 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.821702 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Trunk [Normal] [AO] [Specular].psd
+  artifactKey: Guid(cc724252428df448db5a10316678900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Trunk [Normal] [AO] [Specular].psd using Guid(cc724252428df448db5a10316678900b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17070d61db78c26c47e8b032f22337e') in 0.015015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.469475 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Branches_Normal combined.tif
+  artifactKey: Guid(d7dcdeeae2a5d4c6f8e5328e09728b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer Branches_Normal combined.tif using Guid(d7dcdeeae2a5d4c6f8e5328e09728b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a614a89411efe8e3b8c4ed2e61ce34f') in 0.011429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.977786 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat
+  artifactKey: Guid(be7cd6e9ad58a462a91b1cae7694ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Bare_BillboardMaterial.mat using Guid(be7cd6e9ad58a462a91b1cae7694ef4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3b75f9bba409018cb2da8800ce55ce') in 0.021545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat
+  artifactKey: Guid(fc87aa03e15b04f0e881cbf7847f77c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Medium_BillboardMaterial.mat using Guid(fc87aa03e15b04f0e881cbf7847f77c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed02d67a13878a5e3730f3ac7dd17856') in 0.044920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Small_BillboardMaterial.mat
+  artifactKey: Guid(fba25871281c3416cbb4faf8edfb3a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Small_BillboardMaterial.mat using Guid(fba25871281c3416cbb4faf8edfb3a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95d4a9a52176ba2cf15fe178dd58f68') in 0.033208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Tall_BillboardAsset.asset
+  artifactKey: Guid(cd6e2d55445fa449ea39d6fd5f5b2452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/Sources/Billboards/Conifer Tall_BillboardAsset.asset using Guid(cd6e2d55445fa449ea39d6fd5f5b2452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40d126696d225d2f5b4c853ca13b05fc') in 0.216047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.155553 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Normal] [Trans] [Smoothness].png
+  artifactKey: Guid(a88058accae174b14b3aac765ff6bd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/Billboards/Billboard Bare/Conifer Bare [Normal] [Trans] [Smoothness].png using Guid(a88058accae174b14b3aac765ff6bd72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa89a28b4573e265c51eb597989a03d') in 0.016263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.642792 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Shaders/Includes/CTI_indirect.cginc
+  artifactKey: Guid(f9ed72d63ee8a47edbfc5cdeaf78181a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Shaders/Includes/CTI_indirect.cginc using Guid(f9ed72d63ee8a47edbfc5cdeaf78181a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21a3daed5f6eb521e277703d2b84e3f8') in 0.005019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.762175 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Default Components/Resources/CTI_default_billboard.asset
+  artifactKey: Guid(9bd3442d5fe9f4e20b6cac0b0e31b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Default Components/Resources/CTI_default_billboard.asset using Guid(9bd3442d5fe9f4e20b6cac0b0e31b793) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3449a1df3ef5af4823ce5c175f2de9') in 0.019978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Default Components/Resources/CTI_default_normal_spec.psd
+  artifactKey: Guid(9a7c47bf0d59240a68e9d9fd692f632b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Render Pipeline Support/Built-in RP/CTI Runtime Components/Default Components/Resources/CTI_default_normal_spec.psd using Guid(9a7c47bf0d59240a68e9d9fd692f632b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412ea77e40bfb57ea3750eb524adc9f9') in 0.008754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 183.448825 seconds.
+  path: Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset
+  artifactKey: Guid(3ac7580bc6d33a24db86913097b68eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HDRPDefaultResources/DefaultSettingsVolumeProfile.asset using Guid(3ac7580bc6d33a24db86913097b68eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20571f195b533b58e2e7d72de092cb40') in 0.002807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.904008 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer x Stump [Normal] [AO] [Specular].tif
+  artifactKey: Guid(7292f645408434cb896aaee2fd9c2a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Textures/BODT Conifer x Stump [Normal] [AO] [Specular].tif using Guid(7292f645408434cb896aaee2fd9c2a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90531f522eec5546cbac410887f873d5') in 0.037400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.555548 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Bare LOD1.asset
+  artifactKey: Guid(c6029981137bd4653b2149d26518cf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Bare LOD1.asset using Guid(c6029981137bd4653b2149d26518cf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8281c22fc9dd8fc5e818fa436b0acd50') in 0.019825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Medium LOD1.asset
+  artifactKey: Guid(b7bfe0796a8414c10a967a3cc72ebddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Medium LOD1.asset using Guid(b7bfe0796a8414c10a967a3cc72ebddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3acd258d56c8d7b086ea60c8913fa2') in 0.053061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Tall LOD1.asset
+  artifactKey: Guid(07ec567d1ba5c4f178bbc3f291f0d315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Tall LOD1.asset using Guid(07ec567d1ba5c4f178bbc3f291f0d315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9836138008ea2db7bb8fd5964ed7bc') in 0.015385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Small LOD1.asset
+  artifactKey: Guid(f048d29a147474044b8fa98675c66ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Conifers [BOTD]/Shared Sources/Meshes/SM Conifer Small LOD1.asset using Guid(f048d29a147474044b8fa98675c66ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a125c6b4c1ab4279eba8f68a2ca62d') in 0.011949 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
