@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     // variables
+    // all can later be changed to preferance in Unity UI
     public CharacterController controller;
 
     public float speed = 12f;
@@ -33,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         if(isGrounded && velocity.y < 0) {
             velocity.y = -2f;
         }
-
+        // gets controls from Unity Settings default is WASD
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 

@@ -7,6 +7,7 @@ public class SelectionManager : MonoBehaviour
 {
 
     public GameObject interactionInfoUI;
+    // uses legacy Text UI not TextMeshPro
     Text interactionText;
     // Start is called before the first frame update
     void Start()
@@ -22,12 +23,13 @@ public class SelectionManager : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        // if something is hit with raycast
+        // if something is hit with raycast (true)
         // distance set to 2.5f
         if(Physics.Raycast(ray, out hit, 2.5f)) {
             var selectionTransform = hit.transform;
+            // change its property
 
-            // if object has interactable script
+            // if object has interactable script (true)
             // change text
             if(selectionTransform.GetComponent<InteractableObject>()) {
 
