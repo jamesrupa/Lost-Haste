@@ -7,6 +7,7 @@ public class AIMovement : MonoBehaviour
 
     // variables
     Animator animator;
+    // default
     public float moveSpeed = 0.2f;
     Vector3 stopPosition;
     float walkTime;
@@ -18,6 +19,7 @@ public class AIMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // reference
         animator = GetComponent<Animator>();
 
         // creates diversification
@@ -26,6 +28,7 @@ public class AIMovement : MonoBehaviour
         walkTime = Random.Range(3,6);
         waitTime = Random.Range(5,7);
 
+        // check time
         walkCounter = walkTime;
         waitCounter = waitTime;
 
@@ -35,10 +38,12 @@ public class AIMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // true - walking
         if(isWalking) {
             animator.SetBool("isRunning", true);
             walkCounter -= Time.deltaTime;
 
+            // rotates with forward facing movement
             switch(WalkDirection) {
                 case 0:
                     transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
@@ -57,7 +62,7 @@ public class AIMovement : MonoBehaviour
                     transform.position += transform.forward * moveSpeed * Time.deltaTime;
                     break;
             }
-
+            // updates position when walkTime runs out
             if(walkCounter <= 0) {
                 stopPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                 isWalking = false;
@@ -67,8 +72,10 @@ public class AIMovement : MonoBehaviour
                 // reset waitCounter
                 waitCounter = waitTime;
             }
+            // waiting
         } else {
             waitCounter -= Time.deltaTime;
+
             if(waitCounter <= 0) {
                 ChooseDirection();
             }

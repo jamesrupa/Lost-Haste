@@ -1358,6 +1358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7216721269955658484, guid: 646c4b375c892c745b6be07a0fe762a7, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8070583354358840729, guid: 646c4b375c892c745b6be07a0fe762a7, type: 3}
       propertyPath: m_Name
       value: largeRabbit
@@ -1372,7 +1376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8076435120864554677, guid: 646c4b375c892c745b6be07a0fe762a7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.681786
+      value: 40.72
       objectReference: {fileID: 0}
     - target: {fileID: 8076435120864554677, guid: 646c4b375c892c745b6be07a0fe762a7, type: 3}
       propertyPath: m_LocalPosition.z
