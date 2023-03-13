@@ -6,10 +6,34 @@ using UnityEngine;
 public class InteractableObject : MonoBehaviour
 {
 
+    
+    public bool playerInRange;
     //name of object
     public string ItemName;
 
     public string GetItemName() {
         return ItemName;
+    }
+
+    void Update() {
+        // item pickup with E when player is in range & mouse is on object
+        if(Input.GetKeyDown(KeyCode.E) && playerInRange && SelectionManager.Instance.onTarget) {
+            Debug.Log("item added to inventory");
+            Destroy(gameObject);    
+        }
+    }
+
+    // enter = player in area of object
+    // exit = player left area of object
+    private void OnTriggerEnter(Collider other) {
+        if(other.CompareTag("Player")) {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other) {
+        if(other.CompareTag("Player")) {
+            playerInRange = false;
+        }
     }
 }
