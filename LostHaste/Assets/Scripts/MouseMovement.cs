@@ -21,17 +21,18 @@ public class MouseMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!InventorySystem.Instance.isOpen) {
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            // looking up and down (x and y axis)
+            xRotation -= mouseY;
+            yRotation += mouseX;
 
-        // looking up and down (x and y axis)
-        xRotation -= mouseY;
-        yRotation += mouseX;
+            // prevent over rotation
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        // prevent over rotation
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
-
-        transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+            transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        }
     }
 }
