@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2248225831291639245}
   - component: {fileID: 2561470314310393045}
   m_Layer: 0
-  m_Name: stone
+  m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInRange: 0
-  ItemName: Stone [E]
+  ItemName: Stone
