@@ -11,6 +11,7 @@ public class SelectionManager : MonoBehaviour
     // uses legacy Text UI not TextMeshPro
     Text interactionText;
     public bool onTarget;
+    public GameObject selectedObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +47,7 @@ public class SelectionManager : MonoBehaviour
             if(interactable && interactable.playerInRange) {
 
                 onTarget = true;
+                selectedObject = interactable.gameObject;
 
                 interactionText.text = interactable.GetItemName();
                 interactionInfoUI.SetActive(true);
