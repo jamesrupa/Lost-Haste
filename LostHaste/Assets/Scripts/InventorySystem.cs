@@ -55,13 +55,13 @@ public class InventorySystem : MonoBehaviour
     void Update()
     {
         // I - inventory keybind
-        // when closed --> inventory opens
+        // when pressed --> inventory opens
         if(Input.GetKeyDown(KeyCode.I) && !isOpen) {
             Debug.Log("I pressed");
             inventoryScreenUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             isOpen = true;
-        } else if (Input.GetKeyDown(KeyCode.I) && isOpen) {
+        } else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Escape)) && isOpen) {
             inventoryScreenUI.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;
             isOpen = false;
