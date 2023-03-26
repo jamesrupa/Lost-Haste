@@ -26,6 +26,7 @@ public class CraftingSystem : MonoBehaviour
 
 
     // all blueprints
+    public CraftingBlueprint AxeBLP = new CraftingBlueprint("Axe", 2, "Stone", 3, "Stick", 3);
 
 
     public static CraftingSystem Instance {get; set;}
@@ -51,15 +52,24 @@ public class CraftingSystem : MonoBehaviour
         axeReqTwo = toolsScreenUI.transform.Find("Axe").transform.Find("Req2").GetComponent<Text>();
 
         craftAxeBTN = toolsScreenUI.transform.Find("Axe").transform.Find("Button").GetComponent<Button>();
-        craftAxeBTN.onClick.AddListener(delegate{craftAnyItem();});
+        craftAxeBTN.onClick.AddListener(delegate{craftAnyItem(AxeBLP);});
 
     }
 
-    void craftAnyItem()
+    void craftAnyItem(CraftingBlueprint blueprintToCraft)
     {
-        
+        InventorySystem.Instance.AddToInventory(blueprintToCraft.itemName);
 
+        if(blueprintToCraft.numOfRequirements == 1) {
+            InventorySystem.Instance.RemoveItem(blueprintToCraft.Req1, blueprintToCraft.Req1amount);
+        } else if (blueprintToCraft.numOfRequirements == 2) {
+            InventorySystem.Instance.RemoveItem(blueprintToCraft.Req1, blueprintToCraft.Req1amount);
+            InventorySystem.Instance.RemoveItem(blueprintToCraft.Req2, blueprintToCraft.Req2amount);
+        }
 
+        InventorySystem.Instance.ReCalculateList();
+
+        RefreshNeededItems();
 
 
     }
@@ -72,6 +82,7 @@ public class CraftingSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RefreshNeededItems();
         // C - crafting system keybind
         // when pressed --> crafting opens
         if(Input.GetKeyDown(KeyCode.C) && !isOpen) {
@@ -86,5 +97,40 @@ public class CraftingSystem : MonoBehaviour
             }
             isOpen = false;
         }
+    }
+
+
+    private void RefreshNeededItems() {
+
+        int stone_count = 0;
+        int stick_count = 0;
+
+        inventoryItemList = InventorySystem.Instance.itemList;
+
+        foreach(string itemName in inventoryItemList) {
+            switch(itemName) {
+                case "Stone":
+                    stone_count += 1;
+                    break;
+                case "Stick":
+                    stick_count += 1;
+                    break;
+            }
+        }
+
+        // ----- A X E -----
+        axeReqOne.text = "3 Stone [" + stone_count + "]";
+        axeReqTwo.text = "3 Stick [" + stick_count + "]";
+
+        if(stone_count >= 3 && stick_count >= 3) {
+            craftAxeBTN.gameObject.SetActive(true);
+        } else {
+            craftAxeBTN.gameObject.SetActive(false);
+        }
+
+
+
+
+
     }
 }

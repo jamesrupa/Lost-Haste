@@ -112,4 +112,38 @@ public class InventorySystem : MonoBehaviour
         }
 
     }
+
+    public void RemoveItem(string nameToRemove, int amountToRemove) {
+
+        int counter = amountToRemove;
+
+        // start at last inventory slot and go through inventory backwards
+        for(var i = slotList.Count - 1; i >= 0; i--) {
+
+            if(slotList[i].transform.childCount > 0 ) {
+                if(slotList[i].transform.GetChild(0).name == nameToRemove + "(Clone)" && counter != 0) {
+                    Destroy(slotList[i].transform.GetChild(0).gameObject);
+                    counter -= 1;
+                }
+            }
+        }
+    }
+
+
+    public void ReCalculateList() {
+        itemList.Clear();
+
+        foreach(GameObject slot in slotList) {
+
+            if(slot.transform.childCount > 0) {
+
+                string name = slot.transform.GetChild(0).name; 
+                //how it appears --> Item (Clone)
+                string str1 = "(Clone)";
+                string result = name.Replace(str1, "");
+
+                itemList.Add(result);
+            }
+        }
+    }
 }
