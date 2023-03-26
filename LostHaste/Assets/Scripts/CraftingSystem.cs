@@ -67,12 +67,17 @@ public class CraftingSystem : MonoBehaviour
             InventorySystem.Instance.RemoveItem(blueprintToCraft.Req2, blueprintToCraft.Req2amount);
         }
 
-        InventorySystem.Instance.ReCalculateList();
+        StartCoroutine(calculate());
 
         RefreshNeededItems();
 
-
     }
+
+    public IEnumerator calculate() {
+        yield return new WaitForSeconds(1f);
+        InventorySystem.Instance.ReCalculateList();
+    }
+
 
     void openToolsCategory() {
         craftingScreenUI.SetActive(false);
