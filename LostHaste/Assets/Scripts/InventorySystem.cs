@@ -63,7 +63,9 @@ public class InventorySystem : MonoBehaviour
             isOpen = true;
         } else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Escape)) && isOpen) {
             inventoryScreenUI.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            if(!CraftingSystem.Instance.isOpen) {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
             isOpen = false;
         }
     }

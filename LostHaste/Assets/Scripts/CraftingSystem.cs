@@ -81,7 +81,9 @@ public class CraftingSystem : MonoBehaviour
         } else if ((Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.Escape)) && isOpen) {
             craftingScreenUI.SetActive(false);
             toolsScreenUI.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
+            if(!InventorySystem.Instance.isOpen) {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
             isOpen = false;
         }
     }
