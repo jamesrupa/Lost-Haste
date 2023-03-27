@@ -12,6 +12,10 @@ public class SelectionManager : MonoBehaviour
     Text interactionText;
     public bool onTarget;
     public GameObject selectedObject;
+
+
+    public Image whiteDotImage;
+    public Image handIcon;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,14 +55,27 @@ public class SelectionManager : MonoBehaviour
 
                 interactionText.text = interactable.GetItemName();
                 interactionInfoUI.SetActive(true);
+
+                if(interactable.CompareTag("pickable")) {
+                    whiteDotImage.gameObject.SetActive(false);
+                    handIcon.gameObject.SetActive(true);
+                } else {
+                    handIcon.gameObject.SetActive(false);
+                    whiteDotImage.gameObject.SetActive(true);
+                }
+
             } else {
                 onTarget = false;
                 interactionInfoUI.SetActive(false);
+                handIcon.gameObject.SetActive(false);
+                whiteDotImage.gameObject.SetActive(true);
             }
             // if no longer looking at object turn off InteractionInfoUI
         } else {
             onTarget = false;
             interactionInfoUI.SetActive(false);
+            handIcon.gameObject.SetActive(false);
+            whiteDotImage.gameObject.SetActive(true);
         }
     }
 }
