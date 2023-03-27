@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
@@ -20,6 +21,10 @@ public class InventorySystem : MonoBehaviour
 
     private GameObject itemToAdd;
     private GameObject whatSlotToEquip;
+
+    public GameObject ItemPickUpAlert;
+    public Text pickupName;
+    public Image pickupImage;
 
     public bool isFull;
 
@@ -78,8 +83,19 @@ public class InventorySystem : MonoBehaviour
 
         itemList.Add(itemName);
 
+        TriggerPopUp(itemName, itemToAdd.GetComponent<Image>().sprite);
+
         ReCalculateList();
         CraftingSystem.Instance.RefreshNeededItems();
+    }
+
+    void TriggerPopUp(string itemName, Sprite itemSprite) {
+        ItemPickUpAlert.SetActive(true);
+
+        pickupName.text = itemName;
+        pickupImage.sprite = itemSprite;
+
+        
     }
 
     private GameObject FindNextEmptySlot()
