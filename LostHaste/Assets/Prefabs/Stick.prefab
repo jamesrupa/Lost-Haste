@@ -309,7 +309,7 @@ MeshRenderer:
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 0
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
@@ -363,7 +363,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -18.11, y: 4, z: 4}
+  m_Size: {x: 18, y: 4, z: 4.42}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &6630652560838916690
 MonoBehaviour:
