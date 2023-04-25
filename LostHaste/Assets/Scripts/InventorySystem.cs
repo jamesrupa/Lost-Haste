@@ -14,6 +14,8 @@ public class InventorySystem : MonoBehaviour
 
     // variables
     public GameObject inventoryScreenUI;
+    public GameObject ItemInfoUI;
+
     public bool isOpen;
 
     public List<GameObject> slotList = new List<GameObject>();
@@ -95,7 +97,13 @@ public class InventorySystem : MonoBehaviour
         pickupName.text = itemName;
         pickupImage.sprite = itemSprite;
 
+        StartCoroutine(CountDown());
         
+    }
+
+    IEnumerator CountDown() {
+        yield return new WaitForSeconds(1);
+        ItemPickUpAlert.SetActive(false);
     }
 
     private GameObject FindNextEmptySlot()
@@ -141,7 +149,7 @@ public class InventorySystem : MonoBehaviour
 
             if(slotList[i].transform.childCount > 0 ) {
                 if(slotList[i].transform.GetChild(0).name == nameToRemove + "(Clone)" && counter != 0) {
-                    Destroy(slotList[i].transform.GetChild(0).gameObject);
+                    DestroyImmediate(slotList[i].transform.GetChild(0).gameObject);
                     counter -= 1;
                 }
             }
