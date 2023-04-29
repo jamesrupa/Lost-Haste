@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +8,7 @@ using UnityEngine.UI;
 public class TrashSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
  
+    // variables
     public GameObject trashAlertUI;
  
     private Text textToModify;
@@ -47,14 +47,15 @@ public class TrashSlot : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoi
  
     void Start()
     {
-        imageComponent = transform.Find("background").GetComponent<Image>();
+        // grabs all necessary components
+        imageComponent = transform.Find("Background").GetComponent<Image>();
  
         textToModify = trashAlertUI.transform.Find("Text").GetComponent<Text>();
  
-        YesBTN = trashAlertUI.transform.Find("yes").GetComponent<Button>();
+        YesBTN = trashAlertUI.transform.Find("Yes").GetComponent<Button>();
         YesBTN.onClick.AddListener(delegate { DeleteItem(); });
  
-        NoBTN = trashAlertUI.transform.Find("no").GetComponent<Button>();
+        NoBTN = trashAlertUI.transform.Find("No").GetComponent<Button>();
         NoBTN.onClick.AddListener(delegate { CancelDeletion(); });
  
     }
