@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 3836
+  controlID: 130
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 3837
+  controlID: 79
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 3838
+  controlID: 56
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,7 +227,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 34fbffffd05a0000f25a0000cc5b00007e5c0000
+      m_ExpandedIDs: 38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -270,8 +270,8 @@ MonoBehaviour:
     y: 0
     width: 1503
     height: 1015
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -536,9 +536,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 912.4961, y: 251.74194, z: 2640.3843}
+    m_Target: {x: 885.8777, y: 481.922, z: 2852.6968}
     speed: 2
-    m_Value: {x: 912.4961, y: 251.74194, z: 2640.3843}
+    m_Value: {x: 885.8777, y: 481.922, z: 2852.6968}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,13 +585,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.06444628, y: 0.0029535734, z: -0.00186931, w: -0.9978741}
+    m_Target: {x: -0.013487991, y: 0.0060445876, z: -0.0017557383, w: -0.99984705}
     speed: 2
-    m_Value: {x: -0.064448915, y: 0.0029536942, z: -0.0018693865, w: -0.9979149}
+    m_Value: {x: -0.01348856, y: 0.006044843, z: -0.0017558123, w: -0.99988925}
   m_Size:
-    m_Target: 1705.5814
+    m_Target: 2025.7084
     speed: 2
-    m_Value: 1705.5814
+    m_Value: 2025.7084
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -791,21 +791,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/UI Art
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/UI Art
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jimbo\Desktop\Lost-Haste\LostHaste
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 53}
-    m_SelectedIDs: 72600000
-    m_LastClickedID: 24690
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 6c600000
+    m_LastClickedID: 24684
     m_ExpandedIDs: 00000000026000000460000006600000086000000a6000000c6000000e60000010600000126000001460000016600000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -834,7 +834,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000026000000460000006600000086000000a6000000c6000000e60000010600000126000001460000016600000ffffff7f
+    m_ExpandedIDs: 00000000026000000460000006600000086000000a6000000c6000000e60000010600000126000001460000016600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -859,8 +859,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: d05a0000
-    m_LastClickedInstanceID: 23248
+    m_SelectedInstanceIDs: aa0c0000
+    m_LastClickedInstanceID: 3242
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000d469000000000000
     m_RenameOverlay:
@@ -937,8 +937,8 @@ MonoBehaviour:
     y: 0
     width: 285
     height: 1307
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -978,7 +978,7 @@ MonoBehaviour:
     m_CachedPref: 151
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 23248
+  m_LastInspectedObjectInstanceID: 3242
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0

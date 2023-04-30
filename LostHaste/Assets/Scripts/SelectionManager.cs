@@ -78,4 +78,18 @@ public class SelectionManager : MonoBehaviour
             whiteDotImage.gameObject.SetActive(true);
         }
     }
+
+    public void DisableSelection() {
+        handIcon.enabled = false;
+        whiteDotImage.enabled = false;
+        interactionInfoUI.SetActive(false);
+
+        selectedObject = null;
+    }
+
+    public void EnableSelection() {
+        handIcon.enabled = true;
+        whiteDotImage.enabled = true;
+        interactionInfoUI.SetActive(true);
+    }
 }

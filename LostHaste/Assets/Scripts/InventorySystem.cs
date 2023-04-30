@@ -45,6 +45,8 @@ public class InventorySystem : MonoBehaviour
         isFull = false;
 
         PopulateSlotList();
+
+        Cursor.visible = false;
     }
 
     // adds slots to slotList
@@ -67,11 +69,21 @@ public class InventorySystem : MonoBehaviour
             Debug.Log("I pressed");
             inventoryScreenUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            SelectionManager.Instance.DisableSelection();
+            SelectionManager.Instance.GetComponent<SelectionManager>().enabled = false;
+
             isOpen = true;
         } else if ((Input.GetKeyDown(KeyCode.I) || Input.GetKeyDown(KeyCode.Escape)) && isOpen) {
             inventoryScreenUI.SetActive(false);
             if(!CraftingSystem.Instance.isOpen) {
                 Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+
+                SelectionManager.Instance.EnableSelection();
+                SelectionManager.Instance.GetComponent<SelectionManager>().enabled = true;
+                
             }
             isOpen = false;
         }
