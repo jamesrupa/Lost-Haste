@@ -23,6 +23,18 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         if(!Item) {
             DragAndDrop.itemBeingDragged.transform.SetParent(transform);
             DragAndDrop.itemBeingDragged.transform.localPosition = new Vector2(0,0);
+
+
+            if(!transform.CompareTag("QuickSlot")) {
+                DragAndDrop.itemBeingDragged.GetComponent<InventoryItem>().isInsideQuickSlot = false;
+                InventorySystem.Instance.ReCalculateList();
+            }
+
+            if(transform.CompareTag("QuickSlot")) {
+                DragAndDrop.itemBeingDragged.GetComponent<InventoryItem>().isInsideQuickSlot = true;
+                InventorySystem.Instance.ReCalculateList();
+            }
+
         }
     }
 
