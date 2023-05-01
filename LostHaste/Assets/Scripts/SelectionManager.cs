@@ -16,6 +16,8 @@ public class SelectionManager : MonoBehaviour
 
     public Image whiteDotImage;
     public Image handIcon;
+
+    public bool handIsVisible;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +61,13 @@ public class SelectionManager : MonoBehaviour
                 if(interactable.CompareTag("pickable")) {
                     whiteDotImage.gameObject.SetActive(false);
                     handIcon.gameObject.SetActive(true);
+
+                    handIsVisible = true;
                 } else {
                     handIcon.gameObject.SetActive(false);
                     whiteDotImage.gameObject.SetActive(true);
+
+                    handIsVisible = false;
                 }
 
             } else {
@@ -69,6 +75,8 @@ public class SelectionManager : MonoBehaviour
                 interactionInfoUI.SetActive(false);
                 handIcon.gameObject.SetActive(false);
                 whiteDotImage.gameObject.SetActive(true);
+
+                handIsVisible = false;
             }
             // if no longer looking at object turn off InteractionInfoUI
         } else {
@@ -76,6 +84,8 @@ public class SelectionManager : MonoBehaviour
             interactionInfoUI.SetActive(false);
             handIcon.gameObject.SetActive(false);
             whiteDotImage.gameObject.SetActive(true);
+
+            handIsVisible = false;
         }
     }
 
