@@ -59,7 +59,8 @@ public class ChopTree : MonoBehaviour
         SelectionManager.Instance.selectedTree = null;
         SelectionManager.Instance.chopHolder.gameObject.SetActive(false);
 
-        GameObject brokenTree = Instantiate(Resources.Load<GameObject>("ChoppedTree"), new Vector3(treePosition.x - 4, treePosition.y + 1, treePosition.z), Quaternion.Euler(0,0,0));
+        //new Vector3(treePosition.x - 4, treePosition.y + 1, treePosition.z)
+        GameObject brokenTree = Instantiate(Resources.Load<GameObject>("ChoppedTree"), treePosition, Quaternion.Euler(0,0,0));
     }
 
     // Update is called once per frame
