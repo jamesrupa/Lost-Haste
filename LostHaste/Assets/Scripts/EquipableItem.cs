@@ -24,14 +24,16 @@ public class EquipableItem : MonoBehaviour
         // when no menus are open
         if(Input.GetMouseButtonDown(0) && InventorySystem.Instance.isOpen == false && CraftingSystem.Instance.isOpen == false && SelectionManager.Instance.handIsVisible == false) {
             
-            GameObject selectedTree = SelectionManager.Instance.selectedTree;
-            if(selectedTree != null) {
-                selectedTree.GetComponent<ChopTree>().getHit();
-            }
             
             animator.SetTrigger("swing");
         }
 
+    }
 
+    public void GetHit() {
+        GameObject selectedTree = SelectionManager.Instance.selectedTree;
+            if(selectedTree != null) {
+                selectedTree.GetComponent<ChopTree>().getHit();
+            }
     }
 }
