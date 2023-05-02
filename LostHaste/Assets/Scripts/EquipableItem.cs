@@ -20,8 +20,15 @@ public class EquipableItem : MonoBehaviour
     void Update()
     {
         
-        // left mouse button
+        // left mouse button - interact with equipped item
+        // when no menus are open
         if(Input.GetMouseButtonDown(0) && InventorySystem.Instance.isOpen == false && CraftingSystem.Instance.isOpen == false && SelectionManager.Instance.handIsVisible == false) {
+            
+            GameObject selectedTree = SelectionManager.Instance.selectedTree;
+            if(selectedTree != null) {
+                selectedTree.GetComponent<ChopTree>().getHit();
+            }
+            
             animator.SetTrigger("swing");
         }
 

@@ -18,6 +18,10 @@ public class SelectionManager : MonoBehaviour
     public Image handIcon;
 
     public bool handIsVisible;
+    
+    public GameObject selectedTree;
+    public GameObject chopHolder;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +51,23 @@ public class SelectionManager : MonoBehaviour
             var selectionTransform = hit.transform;
             // change its property
             InteractableObject interactable = selectionTransform.GetComponent<InteractableObject>();
+
+
+            ChopTree chopTree = selectionTransform.GetComponent<ChopTree>();
+
+            if(chopTree && chopTree.playerInRange) {
+
+                chopTree.canBeChopped = true;
+                selectedTree = chopTree.gameObject;
+                chopHolder.gameObject.SetActive(true);
+
+            } else {
+                if(selectedTree != null) {
+                    selectedTree.gameObject.GetComponent<ChopTree>().canBeChopped = false;
+                    selectedTree = null;
+                    chopHolder.gameObject.SetActive(false);
+                }
+            }
 
             // if object has interactable script (true)
             // change text
