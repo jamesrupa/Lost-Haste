@@ -58,7 +58,11 @@ public class CraftingSystem : MonoBehaviour
 
     void craftAnyItem(CraftingBlueprint blueprintToCraft)
     {
-        InventorySystem.Instance.AddToInventory(blueprintToCraft.itemName);
+
+        //sound
+        SoundManager.Instance.playSound(SoundManager.Instance.craftingSound);
+
+        StartCoroutine(craftDelaySound(blueprintToCraft));
 
         if(blueprintToCraft.numOfRequirements == 1) {
             InventorySystem.Instance.RemoveItem(blueprintToCraft.Req1, blueprintToCraft.Req1amount);
@@ -75,6 +79,13 @@ public class CraftingSystem : MonoBehaviour
         yield return 0; // no delay
         InventorySystem.Instance.ReCalculateList();
         RefreshNeededItems();
+    }
+
+    public IEnumerator craftDelaySound(CraftingBlueprint blueprintToCraft) {
+        yield return new WaitForSeconds(3f);
+
+        InventorySystem.Instance.AddToInventory(blueprintToCraft.itemName);
+
     }
 
 

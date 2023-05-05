@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     
     bool isGrounded;
+
+    private Vector3 lastPosition = new Vector3(0, 0, 0);
+    public bool isMoving;
     void Start()
     {
         
@@ -51,5 +54,15 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if(lastPosition != gameObject.transform.position) {
+            isMoving = true;
+            SoundManager.Instance.playSound(SoundManager.Instance.grassWalkSound);
+        } else {
+            isMoving = false;
+            SoundManager.Instance.grassWalkSound.Stop();
+        }
+
+        lastPosition = gameObject.transform.position;
     }
 }

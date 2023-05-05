@@ -1,0 +1,1410 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.13f1 (9e7d58001ecf) revision 10386776'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/jimbo/Desktop/Lost-Haste/LostHaste
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+60818
+Successfully changed project path to: C:/Users/jimbo/Desktop/Lost-Haste/LostHaste
+C:/Users/jimbo/Desktop/Lost-Haste/LostHaste
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 70.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.13f1 (9e7d58001ecf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jimbo/Desktop/Lost-Haste/LostHaste/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3168
+Invalid texture used for cursor - check importer settings or texture creation. Texture must be RGBA32, readable, have alphaIsTransparency enabled and have no mip chain.
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005200 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 64.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.456 seconds
+Domain Reload Profiling:
+	ReloadAssembly (457ms)
+		BeginReloadAssembly (58ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (322ms)
+			LoadAssemblies (55ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (65ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (203ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005107 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.710 seconds
+Domain Reload Profiling:
+	ReloadAssembly (711ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (549ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (164ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (269ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3386 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (114.2 KB). Loaded Objects now: 3872.
+Memory consumption went from 135.0 MB to 134.9 MB.
+Total: 2.383100 ms (FindLiveObjects: 0.181600 ms CreateObjectMapping: 0.070800 ms MarkObjects: 2.041200 ms  DeleteObjects: 0.088800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1365188.197993 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Base_Color_darkrock.png
+  artifactKey: Guid(3aa6838163b07524ea0ddffa55005ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Base_Color_darkrock.png using Guid(3aa6838163b07524ea0ddffa55005ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df55f5b812e75c5a8627ff2943d5949e') in 0.084633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_summer.png
+  artifactKey: Guid(f3222831158340447b9796b4abf0df00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_summer.png using Guid(f3222831158340447b9796b4abf0df00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a98dcc6579c2f6827ce3491a42f006') in 0.028596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Normal.png
+  artifactKey: Guid(0840e8a2f1c03dd41a034a830963064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Normal.png using Guid(0840e8a2f1c03dd41a034a830963064f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92775b6f1ef9ae44916e1fd78f93b43f') in 0.062021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_spring.png
+  artifactKey: Guid(1e93e6ac308667f4aa43000d7c2ef221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_spring.png using Guid(1e93e6ac308667f4aa43000d7c2ef221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6049e78eb11ad98e29f21d9254883b9') in 0.018387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_autumn.png
+  artifactKey: Guid(4fcfb2e1e19609f4e86a6d98496dfe1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_autumn.png using Guid(4fcfb2e1e19609f4e86a6d98496dfe1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6929b9b6329322068bf9f45b1a2586') in 0.011662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockMossy/DarkRockMossy_normal.png
+  artifactKey: Guid(024a7e0bb16cc8c4f823ed9185a3be9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockMossy/DarkRockMossy_normal.png using Guid(024a7e0bb16cc8c4f823ed9185a3be9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62a4043fca7ecf1919312ebeb251fb4') in 0.023805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_ao.png
+  artifactKey: Guid(ae00be183bcd94c4c875c3a97536abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_ao.png using Guid(ae00be183bcd94c4c875c3a97536abd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f478b0fc99c15076aea4b2d38ab51cb') in 0.014036 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockMossy/DarkRockMossy_Base_Color_darkrockmossy.png
+  artifactKey: Guid(c436e7cda55b0734eb2b58cb775d68c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockMossy/DarkRockMossy_Base_Color_darkrockmossy.png using Guid(c436e7cda55b0734eb2b58cb775d68c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59de65db3c4932bab76471d845b4293f') in 0.011076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_winter.png
+  artifactKey: Guid(e9cad99768884f94ca6c3a02154e8387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRockBrownGrass/DarkRockBrownGrass_Base_Color_winter.png using Guid(e9cad99768884f94ca6c3a02154e8387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95783d7e2d2b81fcccd8dfdab3467148') in 0.011880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_mossyrock.png
+  artifactKey: Guid(c3724d8293a6b694982253cba90d6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_mossyrock.png using Guid(c3724d8293a6b694982253cba90d6002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afb6cd598244de94629f47455e805a4') in 0.012464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Base_Color_rainny.png
+  artifactKey: Guid(7262c251aa3c6254190e5007501f65b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Rock/DarkRock/DarkRock_Base_Color_rainny.png using Guid(7262c251aa3c6254190e5007501f65b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d048e3bb7f8043c01442131387f22bd') in 0.009697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_spring.png
+  artifactKey: Guid(87c89460ff29d4543a4b0b399c0028f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Base_Color_spring.png using Guid(87c89460ff29d4543a4b0b399c0028f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c2421d866a9cb4729288c44a44dcdc') in 0.009888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.489584 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Height_mossyrock.png
+  artifactKey: Guid(0cf1dca2a207a7a4ebbfd49382adc726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Height_mossyrock.png using Guid(0cf1dca2a207a7a4ebbfd49382adc726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7b535798ce4540478dcff9452db8ddd') in 0.012079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_normal.png
+  artifactKey: Guid(e4fd7bf1409708144a6cb3c9805be998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_normal.png using Guid(e4fd7bf1409708144a6cb3c9805be998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59b8fc4e3af2f8e8b6c2dd6d91240c2') in 0.017963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Normal_mossyrock.png
+  artifactKey: Guid(d1452c139dc0e8e48af4f27aa054d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/MossyRock/MossyRock_Normal_mossyrock.png using Guid(d1452c139dc0e8e48af4f27aa054d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4f14fa92484843471f50caba77a92c') in 0.012709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.936731 seconds.
+  path: Assets/Rocks/Rocks Pack - Freebies/Rocks 01/Rock 04/Textures/Rock 04 diffuse.tga
+  artifactKey: Guid(d26e01be05499114caa1ffb71155b392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rocks Pack - Freebies/Rocks 01/Rock 04/Textures/Rock 04 diffuse.tga using Guid(d26e01be05499114caa1ffb71155b392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '545ec1fbeeccdd48f7c53921d1027298') in 0.023742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Rocks/Rocks Pack - Freebies/Rocks 01/Rock 05/Textures/Rock 05 normal.tga
+  artifactKey: Guid(76ba1fdb012ce4c46b10528b7932271b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rocks Pack - Freebies/Rocks 01/Rock 05/Textures/Rock 05 normal.tga using Guid(76ba1fdb012ce4c46b10528b7932271b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fba96fdf2822722515acf7834e74ff') in 0.020893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Rocks/Rocks Pack - Freebies/Rocks 02/Textures/Rocks 02 diffuse.tga
+  artifactKey: Guid(0b43c294cf9c00649853938ea4d775e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rocks Pack - Freebies/Rocks 02/Textures/Rocks 02 diffuse.tga using Guid(0b43c294cf9c00649853938ea4d775e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348e9e1631c7543d4521d3295bb700a2') in 0.027523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_autumn.png
+  artifactKey: Guid(9e57ea900951d8440b201405cc584b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_autumn.png using Guid(9e57ea900951d8440b201405cc584b16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec33a38c68ec1e7264a782346ae523c7') in 0.010799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_spring.png
+  artifactKey: Guid(5342a9f0961dca24d96cbbe48ca31b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_spring.png using Guid(5342a9f0961dca24d96cbbe48ca31b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c0879b817bed2b02b6b2d4efc9dfc0') in 0.021093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_rainny.png
+  artifactKey: Guid(85622157d5b07ab4ebc6b82551afca36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Base_Color_rainny.png using Guid(85622157d5b07ab4ebc6b82551afca36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeae69b4bf3167dbef243c2cde3a0b36') in 0.022858 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.919099 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_height.png
+  artifactKey: Guid(b953e7e49de49f446a61797e29fd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_height.png using Guid(b953e7e49de49f446a61797e29fd2863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8773638bf7f393da97c10e0e7eb6ea') in 0.023985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Normal_RockWithGrass.png
+  artifactKey: Guid(e2ce2c8a9b9c1fe47a2d237375deb3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Textures/Cliff/RockWithGrass/RockWithGrass_Normal_RockWithGrass.png using Guid(e2ce2c8a9b9c1fe47a2d237375deb3d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '368e02f2f2853968111f167175911be6') in 0.020929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 219.493637 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(93c5eb815a06a6c40b7304f7f6ae563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_autumn Terrain Layer.terrainlayer using Guid(93c5eb815a06a6c40b7304f7f6ae563d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5647eafdf685f6a0a8b3c525ae855101') in 0.029561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(56b30f5d529061e4d870d028828792d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_autumn Terrain Layer.terrainlayer using Guid(56b30f5d529061e4d870d028828792d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28a7f224d2c18561207a515b1e7c5f9') in 0.024188 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(255767f325d2836448371822246c20b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_rainny Terrain Layer.terrainlayer using Guid(255767f325d2836448371822246c20b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e450d76118ffba893739175117bf962') in 0.017319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(8342e9965a186a7479a727a1cf739ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_rainny Terrain Layer.terrainlayer using Guid(8342e9965a186a7479a727a1cf739ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e722bb498c9ad1bfd52931dea226781d') in 0.020699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass TerrainLayer A.terrainlayer
+  artifactKey: Guid(a374b2f4dc87d0643a703039e81587ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass TerrainLayer A.terrainlayer using Guid(a374b2f4dc87d0643a703039e81587ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192fda3cf1040e423bacd5dace53e666') in 0.034194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtGrassRoad TerrainLayer.terrainlayer
+  artifactKey: Guid(817df00c7903b1640833031e0763c253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtGrassRoad TerrainLayer.terrainlayer using Guid(817df00c7903b1640833031e0763c253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258fdbbc9d14fae0aec5faa813d34ae9') in 0.019215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_darkrock Terrain Layer.terrainlayer
+  artifactKey: Guid(5f5d4d5d159786249b16c6811ff04855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_darkrock Terrain Layer.terrainlayer using Guid(5f5d4d5d159786249b16c6811ff04855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c49d4de517fa50d89832d1a8b43b69') in 0.016984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_dirtybrownroad Terrain Layer.terrainlayer
+  artifactKey: Guid(d05eab3103a944a43a523b2fa1060d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_dirtybrownroad Terrain Layer.terrainlayer using Guid(d05eab3103a944a43a523b2fa1060d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7942d16cbe0c84be1fcbf14598157f') in 0.015802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(bc9c521302f1e9c428b164a4513be669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_autumn Terrain Layer.terrainlayer using Guid(bc9c521302f1e9c428b164a4513be669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c994de818276f1466b995d41c9c04827') in 0.014860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(5addbf378dc7f094ca11c349ea2d3d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_summer Terrain Layer.terrainlayer using Guid(5addbf378dc7f094ca11c349ea2d3d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c919fdf6df32cc2a55f055bbec079e') in 0.015079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(42619e8b69569df459227c1432139797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_autumn Terrain Layer.terrainlayer using Guid(42619e8b69569df459227c1432139797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a27f469988cf42d34424f9b7ff12484') in 0.024517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(ee10fb7206b357b4582d1ae967517ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrownRoad_Base_Color_winter Terrain Layer.terrainlayer using Guid(ee10fb7206b357b4582d1ae967517ae5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b5697fab7743e67304a5d8c622426e') in 0.027500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(a69755934c6137c4ca19662babfd8ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_winter Terrain Layer.terrainlayer using Guid(a69755934c6137c4ca19662babfd8ca9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a383176b0602bdbc6843f33f729b4e') in 0.018668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(b6b4b987bbb2ab54da248dedecaf3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRock_Base_Color_spring Terrain Layer.terrainlayer using Guid(b6b4b987bbb2ab54da248dedecaf3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71f407a3cf38f51d0318f1c946916e8') in 0.020325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(833d3788e4f17b64697b80741f90bf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(833d3788e4f17b64697b80741f90bf65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d769a12c6d1026ee5fc889ba540919f') in 0.020526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(59868623f49877a4fa1ee0da7bbefad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(59868623f49877a4fa1ee0da7bbefad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844951dcc9d3b08b0d241222e8957c5a') in 0.024943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_brownmossygrass Terrain Layer.terrainlayer
+  artifactKey: Guid(ddae084bed3b8a84b980f02847bdcb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/BrownMossyGrass_Base_Color_brownmossygrass Terrain Layer.terrainlayer using Guid(ddae084bed3b8a84b980f02847bdcb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926989ddd4e324e95d09cabcb8757cd9') in 0.021296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(2e2c5c2def1bf9f4b839b9389044f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_rainny Terrain Layer.terrainlayer using Guid(2e2c5c2def1bf9f4b839b9389044f265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7996248321633d8a6ff326fe7408c227') in 0.014518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_autumnTerrain Layer.terrainlayer
+  artifactKey: Guid(aaf0d9e8bbd679742b903b0d366841bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockBrownGrass_Base_Color_autumnTerrain Layer.terrainlayer using Guid(aaf0d9e8bbd679742b903b0d366841bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ce482509ad73c9c4f73722cd704389') in 0.016607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown TerrainLayer B.terrainlayer
+  artifactKey: Guid(14629a0746410dc4c8bfdce24369ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown TerrainLayer B.terrainlayer using Guid(14629a0746410dc4c8bfdce24369ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff84bf3776c9bcd1f15d63786617d28') in 0.019605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockMossy_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(b0c17971deee0fe46960252886c79ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DarkRockMossy_Base_Color_spring Terrain Layer.terrainlayer using Guid(b0c17971deee0fe46960252886c79ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8160ddd0d867fe9628f7f0f1bbf4d220') in 0.018267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(adcd1961e5ed3e24f9321faf47d66906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyBrown_Base_Color_summer Terrain Layer.terrainlayer using Guid(adcd1961e5ed3e24f9321faf47d66906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873b391cbc3824c964caa6b600838349') in 0.016368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.850779 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass TerrainLayer D.terrainlayer
+  artifactKey: Guid(2bc02bff43618704787e91075715c686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass TerrainLayer D.terrainlayer using Guid(2bc02bff43618704787e91075715c686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f0d99996bf51a787ebba91a37711a5') in 0.015890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(830ba65114c4bba42b2a19902155a683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(830ba65114c4bba42b2a19902155a683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51589ad2245beb84a4a329f164dcb64') in 0.027941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(25fa1f97e782b724b8c392273e68797b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_summer Terrain Layer.terrainlayer using Guid(25fa1f97e782b724b8c392273e68797b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53236162442a5f9472df3c1d981cc1f') in 0.018012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_dirtygrass Terrain Layer.terrainlayer
+  artifactKey: Guid(a2028722b8b0dec4081d7f15bc24fb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrass_Base_Color_dirtygrass Terrain Layer.terrainlayer using Guid(a2028722b8b0dec4081d7f15bc24fb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc9b9af0649967430cfe2a1f2233f7b') in 0.017829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006237 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(bc56b0047468a154f933d1d3b6abcc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_autumn Terrain Layer.terrainlayer using Guid(bc56b0047468a154f933d1d3b6abcc62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136bf0725eff0de93a16f69b2436267c') in 0.028012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_dirtygrassroad Terrain Layer.terrainlayer
+  artifactKey: Guid(05a6ef8fd3138cb4fb97845bdbde373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_dirtygrassroad Terrain Layer.terrainlayer using Guid(05a6ef8fd3138cb4fb97845bdbde373a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd811ea7339c8342e9ad091f2d5120a23') in 0.018617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(8ec1b5d70a6e2e4469064e8369f34e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_rainny Terrain Layer.terrainlayer using Guid(8ec1b5d70a6e2e4469064e8369f34e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f19af48a5f3dd5cd7e07d2bedba43821') in 0.018127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(7d7f5368da8649a41861f937b2cccbea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGrassRoad_Base_Color_winter Terrain Layer.terrainlayer using Guid(7d7f5368da8649a41861f937b2cccbea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e2b0e20a33f7fd92675bd4a1fc0091') in 0.032964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGreenGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(163035a91d9b341498cd28e471dd128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGreenGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(163035a91d9b341498cd28e471dd128a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729ef4477f1273e8e5583fb88cfed8b1') in 0.028048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGreenGrass TerrainLayer.terrainlayer
+  artifactKey: Guid(5ab409c4af73b404882c4b444e73c961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DirtyGreenGrass TerrainLayer.terrainlayer using Guid(5ab409c4af73b404882c4b444e73c961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316509d4df1210c3b591e54304e5d117') in 0.016190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.196179 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(9452f0a44aa36ab4699faf3ec9e023f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(9452f0a44aa36ab4699faf3ec9e023f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7f05bd615a6de6c1c4f53ba429eca7') in 0.018565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(c97fc18d26b77e6478b17f99c7a0783b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_winter Terrain Layer.terrainlayer using Guid(c97fc18d26b77e6478b17f99c7a0783b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c11f17e6dc328379dc74a2f1974dd5d') in 0.064418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(c8f2b64a0ba30874d8bd0e0a20a49ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/DryGrass_Base_Color_summer Terrain Layer.terrainlayer using Guid(c8f2b64a0ba30874d8bd0e0a20a49ed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3909f7b038d0e561b60f098c27ad88ef') in 0.029444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(cd961e93dbfead541a3ebf58101707b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass_Base_Color_winter Terrain Layer.terrainlayer using Guid(cd961e93dbfead541a3ebf58101707b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172a21dd2671c040fb46e5de0c3bb847') in 0.016892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_rainny Terrain Layer 1.terrainlayer
+  artifactKey: Guid(b47252aa30e1b014e8f367ccee61ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_rainny Terrain Layer 1.terrainlayer using Guid(b47252aa30e1b014e8f367ccee61ded1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffb22f939c3c6f810f3a21f31ada252') in 0.027700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/GreenField_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(d09e853571f15bb47a8f9372a51f45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/GreenField_Base_Color_winter Terrain Layer.terrainlayer using Guid(d09e853571f15bb47a8f9372a51f45ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b199dc2c53d184437d3fe5534ad5b0b1') in 0.024622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad TerrainLayer.terrainlayer
+  artifactKey: Guid(00b6bcc53c00f0a409654eb653cbe94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad TerrainLayer.terrainlayer using Guid(00b6bcc53c00f0a409654eb653cbe94f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ee441c6770dc8e0c005ff20de83393') in 0.023938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(fb0bc8ce5699b7a478f8c6d422c9e313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass_Base_Color_rainny Terrain Layer.terrainlayer using Guid(fb0bc8ce5699b7a478f8c6d422c9e313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffc71c784f923ead5da69e607e40c4f') in 0.023312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass TerrainLayer A.terrainlayer
+  artifactKey: Guid(88afb64a1c45acb49a1554d878b94f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyGrass TerrainLayer A.terrainlayer using Guid(88afb64a1c45acb49a1554d878b94f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ffd625b2da53334707daf6e533c1fec') in 0.021062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(d47cc94509bb193458827432bd592bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_winter Terrain Layer.terrainlayer using Guid(d47cc94509bb193458827432bd592bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f5f8b9cd43142f7b4d0145bf1d26d3') in 0.023760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_heavymossyroad Terrain Layer 1.terrainlayer
+  artifactKey: Guid(a265d22a3aac9b8419eb284c3e0cac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/HeavyMossyRoad_Base_Color_heavymossyroad Terrain Layer 1.terrainlayer using Guid(a265d22a3aac9b8419eb284c3e0cac4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fcd44115f4088c29fe5ba4b67a941c') in 0.020450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.162732 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_lightgreen Terrain Layer.terrainlayer
+  artifactKey: Guid(1d32d1fe57fb00d46a9c8652d448bcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_lightgreen Terrain Layer.terrainlayer using Guid(1d32d1fe57fb00d46a9c8652d448bcb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdbc506edf54ca9b4de6e24cab15a81') in 0.018375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(6c716ffdf50113d478fbdbeb1c7812c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_summer Terrain Layer.terrainlayer using Guid(6c716ffdf50113d478fbdbeb1c7812c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aeb096c810bae882eb864ce9f55e7c7') in 0.017460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MainRoad_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(294c11f71dfb1194785fb1003717ac00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MainRoad_Base_Color_winter Terrain Layer.terrainlayer using Guid(294c11f71dfb1194785fb1003717ac00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca8a168cfbab6fafe975d430ee5028b') in 0.017436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(47579fe71f0fc3a42ade5a252b1c2565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/LightGreenMossyStone_Base_Color_winter Terrain Layer.terrainlayer using Guid(47579fe71f0fc3a42ade5a252b1c2565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7087e7d9418f2c1de1c32d7870eb1d40') in 0.017300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_rainny Terrain Layer.terrainlayer
+  artifactKey: Guid(b952b7e91d53e87408485dcc08a0c8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_rainny Terrain Layer.terrainlayer using Guid(b952b7e91d53e87408485dcc08a0c8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31ceec08acdf42adc0105e7f9735c7a') in 0.015849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(9edfd8f01891e0040a62a036287d3706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_winter Terrain Layer.terrainlayer using Guid(9edfd8f01891e0040a62a036287d3706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0453abce691b43ea9a0ba21b67b51e33') in 0.016888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(bd3b70abb4db0f74cb8e79bbb34d2f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass_Base_Color_summer Terrain Layer.terrainlayer using Guid(bd3b70abb4db0f74cb8e79bbb34d2f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd16b5f7f8ae43041eb2656416028424') in 0.022281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock TerrainLayer C.terrainlayer
+  artifactKey: Guid(9ff71385679d418409fe9b29b34bc13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock TerrainLayer C.terrainlayer using Guid(9ff71385679d418409fe9b29b34bc13e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c880a9522c3b06088e5294522d73a8f') in 0.029568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass TerrainLayer.terrainlayer
+  artifactKey: Guid(61b905e386a613d45a00d3b6a8b02b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyGrass TerrainLayer.terrainlayer using Guid(61b905e386a613d45a00d3b6a8b02b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeca2a8beea72a4484792c15528c9d22') in 0.023037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.311482 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(89838176d48e72e4c88d0d1248c2ac37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock_Base_Color_summer Terrain Layer.terrainlayer using Guid(89838176d48e72e4c88d0d1248c2ac37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba41588e7ea3525f062afe6bd2b7dce') in 0.020026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(fd8cab25db3760c4cbe6ee8fb1c84b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyRock_Base_Color_winter Terrain Layer.terrainlayer using Guid(fd8cab25db3760c4cbe6ee8fb1c84b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6afbc6810e33412e3de431693e1661') in 0.024327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyStoneGround TerrainLayer A.terrainlayer
+  artifactKey: Guid(823e443acd6be214fac8e1a3af9294eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyStoneGround TerrainLayer A.terrainlayer using Guid(823e443acd6be214fac8e1a3af9294eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149b2bec99d3246b674acfca6af45149') in 0.019727 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016851 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyStoneGround_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(b037b18ca0718c04396fac4759e29211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/MossyStoneGround_Base_Color_winter Terrain Layer.terrainlayer using Guid(b037b18ca0718c04396fac4759e29211) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c43b59f079230c51bf98c51145d82ce') in 0.023836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_oldroad Terrain Layer.terrainlayer
+  artifactKey: Guid(af2e0b049434d0d43a2d14f360633798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_oldroad Terrain Layer.terrainlayer using Guid(af2e0b049434d0d43a2d14f360633798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a110a22de0ed89c49484ed506636807') in 0.019818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(24a006e1839666f4096db469af133d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_spring Terrain Layer.terrainlayer using Guid(24a006e1839666f4096db469af133d36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c7d9f10b7ab59400dd40652774066c') in 0.021525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithGrass_Base_Color_spring Terrain Layer.terrainlayer
+  artifactKey: Guid(3896279e371f3ee4884f4bbf89e03352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithGrass_Base_Color_spring Terrain Layer.terrainlayer using Guid(3896279e371f3ee4884f4bbf89e03352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5630cbfe50d6aa478dbd881100b27f1b') in 0.024572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(1435802708d828641bcfae8af899c40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_summer Terrain Layer.terrainlayer using Guid(1435802708d828641bcfae8af899c40f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d4c026b0d51fdea46abcc1d57de1a8') in 0.024052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithGrass_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(771e4b049033edc40a74dba4a4fba82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithGrass_Base_Color_autumn Terrain Layer.terrainlayer using Guid(771e4b049033edc40a74dba4a4fba82e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5d1ffcfb7d534a9af3ba68d1139407') in 0.019566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(37a175d0f0c2d124db29be17d814ed2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/OldRoad_Base_Color_winter Terrain Layer.terrainlayer using Guid(37a175d0f0c2d124db29be17d814ed2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2b2ac8081e1cac5028e9d7be8b73a8') in 0.019507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithLightGreenGrass_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(38672b35ee92cbc41a9801388ff865c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithLightGreenGrass_Base_Color_winter Terrain Layer.terrainlayer using Guid(38672b35ee92cbc41a9801388ff865c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa979423b7c2c120c1e7e19820c56f18') in 0.024483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithLightGreenGrass_Base_Color_lightgreegrass Terrain Layer.terrainlayer
+  artifactKey: Guid(ecc315b17c919c9489f47c8a729485a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/RockWithLightGreenGrass_Base_Color_lightgreegrass Terrain Layer.terrainlayer using Guid(ecc315b17c919c9489f47c8a729485a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ad7605c53cbb3ed33cfb447cb483d2') in 0.015158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.222752 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_autumn Terrain Layer.terrainlayer
+  artifactKey: Guid(5684f5ce8f748e74bafe82f3eb40f716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_autumn Terrain Layer.terrainlayer using Guid(5684f5ce8f748e74bafe82f3eb40f716) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f171dbbb18f3b8a91306286f8535d0e0') in 0.017276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_winter Terrain Layer.terrainlayer
+  artifactKey: Guid(f127a519bee96824c8359f5382310b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_winter Terrain Layer.terrainlayer using Guid(f127a519bee96824c8359f5382310b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb1075fe39e022c84445559f61e52921') in 0.017293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_summer Terrain Layer.terrainlayer
+  artifactKey: Guid(62a756c598775334baa733fb25d9b1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/TerrainLayers/StoneGround_Base_Color_summer Terrain Layer.terrainlayer using Guid(62a756c598775334baa733fb25d9b1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1127eed61051984194a69fef0842569a') in 0.017168 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005728 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.876 seconds
+Domain Reload Profiling:
+	ReloadAssembly (877ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (661ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3367 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (81.1 KB). Loaded Objects now: 3883.
+Memory consumption went from 138.2 MB to 138.2 MB.
+Total: 2.537900 ms (FindLiveObjects: 0.266200 ms CreateObjectMapping: 0.067000 ms MarkObjects: 2.122600 ms  DeleteObjects: 0.081200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.033654 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Domain Reload Profiling:
+	ReloadAssembly (762ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (175ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (280ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (12.8 MB). Loaded Objects now: 3973.
+Memory consumption went from 157.2 MB to 144.4 MB.
+Total: 3.474300 ms (FindLiveObjects: 0.202400 ms CreateObjectMapping: 0.143400 ms MarkObjects: 2.150600 ms  DeleteObjects: 0.977200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2230.514069 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Examples Water/Materials/Water Specular.mat
+  artifactKey: Guid(cb828776dbc84113ad97bd57cdf21b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Examples Water/Materials/Water Specular.mat using Guid(cb828776dbc84113ad97bd57cdf21b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6eb43c999a87274c1d5203f92f2d2f') in 0.335722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Examples Water/Materials/Water Surface Mirror.mat
+  artifactKey: Guid(e19529f3ff7a4aa091af92c2f4cf3963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Examples Water/Materials/Water Surface Mirror.mat using Guid(e19529f3ff7a4aa091af92c2f4cf3963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c8ad59e8e7cc8b0d0201ce23cfc4861') in 0.305551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.387699 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Examples Water/Prefabs/Water Specular.prefab
+  artifactKey: Guid(a3b85ee7155343c0a5077c56fdbddf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Examples Water/Prefabs/Water Specular.prefab using Guid(a3b85ee7155343c0a5077c56fdbddf1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd159cee896edae17194af40282b98205') in 0.024046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Examples Water/Prefabs/Water Surface Mirror.prefab
+  artifactKey: Guid(28ab203a6204400b853fcf56294ef10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Examples Water/Prefabs/Water Surface Mirror.prefab using Guid(28ab203a6204400b853fcf56294ef10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c08e3c9317721c9c13b92efd04cc49') in 0.023428 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004849 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.780 seconds
+Domain Reload Profiling:
+	ReloadAssembly (780ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (596ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (273ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3483 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4018.
+Memory consumption went from 157.5 MB to 154.5 MB.
+Total: 3.458600 ms (FindLiveObjects: 0.292200 ms CreateObjectMapping: 0.092700 ms MarkObjects: 2.159800 ms  DeleteObjects: 0.913200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005760 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Domain Reload Profiling:
+	ReloadAssembly (794ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (604ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (285ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4021.
+Memory consumption went from 157.3 MB to 154.3 MB.
+Total: 3.143900 ms (FindLiveObjects: 0.228900 ms CreateObjectMapping: 0.070500 ms MarkObjects: 2.022200 ms  DeleteObjects: 0.821300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004345 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.776 seconds
+Domain Reload Profiling:
+	ReloadAssembly (777ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (595ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (284ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4024.
+Memory consumption went from 157.3 MB to 154.3 MB.
+Total: 3.760900 ms (FindLiveObjects: 0.192300 ms CreateObjectMapping: 0.065400 ms MarkObjects: 2.469900 ms  DeleteObjects: 1.032700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 414.877668 seconds.
+  path: Assets/TerrainSampleAssets/TerrainLayers/Grass_B_TerrainLayer.terrainlayer
+  artifactKey: Guid(bd1fcb10d2c5b5d4ba6e01a34e4735be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/TerrainLayers/Grass_B_TerrainLayer.terrainlayer using Guid(bd1fcb10d2c5b5d4ba6e01a34e4735be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694c1639209b619c069b9fbf4b3a1d98') in 0.064868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.006064 seconds.
+  path: Assets/TerrainSampleAssets/TerrainLayers/Grass_Soil_TerrainLayer.terrainlayer
+  artifactKey: Guid(62f82665abc6fbf4e8f7fa058cbd8d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/TerrainLayers/Grass_Soil_TerrainLayer.terrainlayer using Guid(62f82665abc6fbf4e8f7fa058cbd8d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9b03235c03d2b3b642e001faeb28c70') in 0.037677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.774205 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Materials/NewLayer.terrainlayer
+  artifactKey: Guid(2ce2d1d7ab55a314dbf06833ba38a875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Materials/NewLayer.terrainlayer using Guid(2ce2d1d7ab55a314dbf06833ba38a875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e11eee455bb17ab27337799fcbc8980') in 0.028331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/LaFinca/Midgard Textures/Mjolnir/Materials/NewLayer 1.terrainlayer
+  artifactKey: Guid(41ccf8a6ed4662c4f972e02dfdf2b908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LaFinca/Midgard Textures/Mjolnir/Materials/NewLayer 1.terrainlayer using Guid(41ccf8a6ed4662c4f972e02dfdf2b908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab25c27606dca3b22e8812ea4fca6d2a') in 0.027135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009796 seconds.
+  path: Assets/TerrainSampleAssets/TerrainLayers/Pebbles_B_TerrainLayer.terrainlayer
+  artifactKey: Guid(d1685375fd84e62439c572449faa4657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/TerrainLayers/Pebbles_B_TerrainLayer.terrainlayer using Guid(d1685375fd84e62439c572449faa4657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c3199c1d9f19eb137974e902560b9a') in 0.040523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.518925 seconds.
+  path: Assets/TerrainSampleAssets/TerrainLayers/Snow_TerrainLayer.terrainlayer
+  artifactKey: Guid(59b98ca43f27d8c4a89d4058d2a962e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/TerrainLayers/Snow_TerrainLayer.terrainlayer using Guid(59b98ca43f27d8c4a89d4058d2a962e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '895df06aab34a6904626628773de6584') in 0.015288 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006001 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.733 seconds
+Domain Reload Profiling:
+	ReloadAssembly (734ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (551ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (254ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4027.
+Memory consumption went from 157.3 MB to 154.3 MB.
+Total: 3.406000 ms (FindLiveObjects: 0.222800 ms CreateObjectMapping: 0.131700 ms MarkObjects: 2.231700 ms  DeleteObjects: 0.819100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005662 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.740 seconds
+Domain Reload Profiling:
+	ReloadAssembly (740ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (566ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4030.
+Memory consumption went from 157.3 MB to 154.3 MB.
+Total: 2.981300 ms (FindLiveObjects: 0.196000 ms CreateObjectMapping: 0.066000 ms MarkObjects: 1.907900 ms  DeleteObjects: 0.810900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004455 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jimbo\Desktop\Lost-Haste\LostHaste\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.758 seconds
+Domain Reload Profiling:
+	ReloadAssembly (758ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (576ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (167ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3481 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (3.0 MB). Loaded Objects now: 4033.
+Memory consumption went from 157.3 MB to 154.4 MB.
+Total: 3.601800 ms (FindLiveObjects: 0.233600 ms CreateObjectMapping: 0.156100 ms MarkObjects: 2.332700 ms  DeleteObjects: 0.878500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2037.608941 seconds.
+  path: Assets/SurvivalTools/Prefabs/Arrow.prefab
+  artifactKey: Guid(b94bb02f178a29d40a7391dad10ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Prefabs/Arrow.prefab using Guid(b94bb02f178a29d40a7391dad10ef6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e6c57f424485f5a2d1e08ab4f16587') in 0.121868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Fern_C.prefab
+  artifactKey: Guid(4786e2698ac97a949a9209febfcbd49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Fern_C.prefab using Guid(4786e2698ac97a949a9209febfcbd49b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d6ec8e3a2597eae3d634dfd018194e') in 0.015198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Bush_B.prefab
+  artifactKey: Guid(b273de0d6e5818a4cb3195ce4f376ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Bush_B.prefab using Guid(b273de0d6e5818a4cb3195ce4f376ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28906c8d9aef252271a99cc326b162d') in 0.012407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Rabbits/Demo/Prefabs/Demo White Rabbit.prefab
+  artifactKey: Guid(3f9dcd6bf73fe2f40806fb0074f456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rabbits/Demo/Prefabs/Demo White Rabbit.prefab using Guid(3f9dcd6bf73fe2f40806fb0074f456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048ae7ab79d25b8eb159f72ee2dc66e1') in 0.046952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SurvivalTools/Dagger/Dagger.obj
+  artifactKey: Guid(9e3e7f5bda9757b43bedcd00ab958e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Dagger/Dagger.obj using Guid(9e3e7f5bda9757b43bedcd00ab958e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32909371c1a3c87d666171503a6fb51f') in 0.043027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Fern_A.prefab
+  artifactKey: Guid(6629880e46886724fa0107d3035304e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Fern_A.prefab using Guid(6629880e46886724fa0107d3035304e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce97bb51ac31b2b2917e8d43c2d3744') in 0.011891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SurvivalTools/Prefabs/Dagger.prefab
+  artifactKey: Guid(5f5ea9b7c5a6a2047bc573df589dc534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Prefabs/Dagger.prefab using Guid(5f5ea9b7c5a6a2047bc573df589dc534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd024f8c2fff62ba28ff604a442955db4') in 0.042725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/BushDry_B.prefab
+  artifactKey: Guid(054bf5cf244ff2e4083cbf8eca205cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/BushDry_B.prefab using Guid(054bf5cf244ff2e4083cbf8eca205cf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f97545cba192ed9d1b6ad07f5ad9336b') in 0.012463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.950404 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_A.prefab
+  artifactKey: Guid(4e6885e0d11bd224fa27617a4657c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_A.prefab using Guid(4e6885e0d11bd224fa27617a4657c329) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a6f911c1bf7a8867a538476dffec33') in 0.013951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_B.prefab
+  artifactKey: Guid(7b3e6db10d22f504dbc606110b2cb5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_B.prefab using Guid(7b3e6db10d22f504dbc606110b2cb5e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b20b6218cce88ffaec2ef8a75b83dd0') in 0.015227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038109 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Grass_D.prefab
+  artifactKey: Guid(4dfd50a1f648e984f8188be70774f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Grass_D.prefab using Guid(4dfd50a1f648e984f8188be70774f281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80236339bc6be7d839ebe33824866fa1') in 0.014172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab
+  artifactKey: Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_A.prefab using Guid(9e8508e3025d9c844810b83c5607c09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b087dd456d6ae562cdcfac2d9541085') in 0.012515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/GrassDry_C.prefab
+  artifactKey: Guid(8aa8def6286fc784ba128570ec475974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/GrassDry_C.prefab using Guid(8aa8def6286fc784ba128570ec475974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9691b83b2ee2bce55eb4162fed83fea') in 0.012722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Example Scenes/Environment/Island/Models/Island.fbx
+  artifactKey: Guid(34f3209720a443b58894f291869941b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Example Scenes/Environment/Island/Models/Island.fbx using Guid(34f3209720a443b58894f291869941b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61352c7ed88209580fedfb1a0ca1b24a') in 0.015157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.736423 seconds.
+  path: Assets/#NVJOB Water Shaders V2/Example Scenes/Environment/Palm Trees/Models/Palm Tress.fbx
+  artifactKey: Guid(ac46fdecd19940e08753b2f1f80b22a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Water Shaders V2/Example Scenes/Environment/Palm Trees/Models/Palm Tress.fbx using Guid(ac46fdecd19940e08753b2f1f80b22a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e011a3630f7704c58c2801dda3518ea') in 0.052134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.764946 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_B.prefab
+  artifactKey: Guid(0a701dc0b49cb264c88918e012866821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_B.prefab using Guid(0a701dc0b49cb264c88918e012866821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb98548b492cac4f10211aa6aef9a8a') in 0.012501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/TerrainSampleAssets/Prefabs/Plant_D.prefab
+  artifactKey: Guid(8569bec78272c564ab74ca5b8a4762f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TerrainSampleAssets/Prefabs/Plant_D.prefab using Guid(8569bec78272c564ab74ca5b8a4762f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037a8e548c4f9091a93887caf111e42c') in 0.013165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.233208 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Large_00.fbx
+  artifactKey: Guid(8779f6ce5f3dfe24cb6d5f13ac931d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Large_00.fbx using Guid(8779f6ce5f3dfe24cb6d5f13ac931d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96029c8307f8f5a5743f4da42c0feee5') in 0.035841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.679160 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Large_02.fbx
+  artifactKey: Guid(67a7a3b04fc2b054db1ab2c013c9a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Large_02.fbx using Guid(67a7a3b04fc2b054db1ab2c013c9a039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '845a690d65a0fe428c3a027a3fc16b6a') in 0.021437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Large_06.fbx
+  artifactKey: Guid(9857450ef6948464aa7cb9b5b275efff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Large_06.fbx using Guid(9857450ef6948464aa7cb9b5b275efff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d2ff93a18d9e57d8ab7c01e3c71943') in 0.064445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Large_05.fbx
+  artifactKey: Guid(34adf4cda44bdea4eac68b3c9b1ee19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Large_05.fbx using Guid(34adf4cda44bdea4eac68b3c9b1ee19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29a1bade95b9ba9564e5b2444796e7db') in 0.061861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Large_07.fbx
+  artifactKey: Guid(532f7343bebee3849b08a2d86ea567ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Large_07.fbx using Guid(532f7343bebee3849b08a2d86ea567ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e6675d1a6f565ea71cab87f54961a1') in 0.055219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_07.fbx
+  artifactKey: Guid(0afe92b5dbfee0a4bb54a51874e8c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_07.fbx using Guid(0afe92b5dbfee0a4bb54a51874e8c8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76989cf6999d0c5fca200245406cbcbe') in 0.036791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_03.fbx
+  artifactKey: Guid(c37411807d89f214cacfead133c7a45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_03.fbx using Guid(c37411807d89f214cacfead133c7a45a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a74936c64f3ab3fc721e209f2c8bf5') in 0.020801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_06.fbx
+  artifactKey: Guid(d5b8125221a9bb044b6c60d3771c0d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_06.fbx using Guid(d5b8125221a9bb044b6c60d3771c0d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba0d2907b9a37e95dafcaca8cfd6696') in 0.025138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.355037 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_09.fbx
+  artifactKey: Guid(fb85c1dd0562f9144a56329f4d600069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Medium_09.fbx using Guid(fb85c1dd0562f9144a56329f4d600069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49d88d38dd1ffbda01a51e4d6d47417') in 0.020247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Small_02.fbx
+  artifactKey: Guid(65caa4d86bc6d91479daa09cb196952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Small_02.fbx using Guid(65caa4d86bc6d91479daa09cb196952e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee40c9d9e39bb30c7106a302a13667e8') in 0.021857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Small_03.fbx
+  artifactKey: Guid(8f38ca31eabcd634aa24e93252b29976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Small_03.fbx using Guid(8f38ca31eabcd634aa24e93252b29976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cd763f0b7abf3e5791d4ed3100ff2b') in 0.020810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SurvivalTools/Spear/Spear.obj
+  artifactKey: Guid(cc34e4152f906bf489a1ae3f7ec0ff5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Spear/Spear.obj using Guid(cc34e4152f906bf489a1ae3f7ec0ff5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe64d98c65e07bd900d22d3508c0a74a') in 0.019811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Small_06.fbx
+  artifactKey: Guid(aa1a6e4bb72da18488f4f8e67fa15076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Small_06.fbx using Guid(aa1a6e4bb72da18488f4f8e67fa15076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946d433822d77f3a75de9fbef4844fe5') in 0.024011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sticks_Branches/Meshes/SM_Sticks_Small_11.fbx
+  artifactKey: Guid(3c3757987de24f64faa997d845fee3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sticks_Branches/Meshes/SM_Sticks_Small_11.fbx using Guid(3c3757987de24f64faa997d845fee3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd69e02e4ea925ecad6afc791ebd3b97b') in 0.020941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.830134 seconds.
+  path: Assets/SurvivalTools/Prefabs/Stone pick.prefab
+  artifactKey: Guid(d13550f6fdbe22442aeced219ced9526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Prefabs/Stone pick.prefab using Guid(d13550f6fdbe22442aeced219ced9526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f912b2316389381c107bce1ab124027') in 0.041731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SurvivalTools/Sword/Sword.obj
+  artifactKey: Guid(c3e975b7f4e5be34fb2175e088643091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SurvivalTools/Sword/Sword.obj using Guid(c3e975b7f4e5be34fb2175e088643091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74073e0ed284e636df1f6b72e0c634aa') in 0.015080 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

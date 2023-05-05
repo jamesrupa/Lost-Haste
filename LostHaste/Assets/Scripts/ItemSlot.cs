@@ -21,6 +21,10 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         // if there is no item in that slot
         // set our item into slot
         if(!Item) {
+
+            //sound
+            SoundManager.Instance.playSound(SoundManager.Instance.dropItemSound);
+
             DragAndDrop.itemBeingDragged.transform.SetParent(transform);
             DragAndDrop.itemBeingDragged.transform.localPosition = new Vector2(0,0);
 
