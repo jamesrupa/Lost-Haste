@@ -24,15 +24,24 @@ public class EquipableItem : MonoBehaviour
         // when no menus are open
         if(Input.GetMouseButtonDown(0) && InventorySystem.Instance.isOpen == false && CraftingSystem.Instance.isOpen == false && SelectionManager.Instance.handIsVisible == false) {
             
-            
+            StartCoroutine(SwingSoundDelay());
+
             animator.SetTrigger("swing");
         }
+
+    }
+
+    IEnumerator SwingSoundDelay() {
+        yield return new WaitForSeconds(0.2f);
+
+        SoundManager.Instance.playSound(SoundManager.Instance.toolSwingSound);
 
     }
 
     public void GetHit() {
         GameObject selectedTree = SelectionManager.Instance.selectedTree;
             if(selectedTree != null) {
+                SoundManager.Instance.playSound(SoundManager.Instance.chopSound);
                 selectedTree.GetComponent<ChopTree>().getHit();
             }
     }

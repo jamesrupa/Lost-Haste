@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c928544c35892724290f9491d0d43277, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 51fc2df6a9b2d364bbf42cd0a1390454, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
   isTrashable: 1
   thisName: Stone
   thisDescription: A small stone found on the ground.
-  thisFunctionality: Used to craft items.
+  thisFunctionality: Used to craft tools.
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0

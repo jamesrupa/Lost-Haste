@@ -90,6 +90,8 @@ public class InventorySystem : MonoBehaviour
     }
 
     public void AddToInventory(string itemName) {
+        SoundManager.Instance.playSound(SoundManager.Instance.itemSound);
+
         whatSlotToEquip = FindNextEmptySlot();
 
         itemToAdd = (GameObject)Instantiate(Resources.Load<GameObject>(itemName), whatSlotToEquip.transform.position, whatSlotToEquip.transform.rotation);
@@ -133,18 +135,18 @@ public class InventorySystem : MonoBehaviour
         return new GameObject();
     }
 
-    public bool CheckIfFull()
+    public bool CheckSlotsAvaliable(int emptyNeeded)
     {
-        int counter = 0;
+        int emptySlot = 0;
 
         foreach(GameObject slot in slotList) {
 
-            if(slot.transform.childCount > 0) {
-                counter += 1;
+            if(slot.transform.childCount <= 0) {
+                emptySlot += 1;
             }
         }
         // inventory max slots 
-        if(counter == 18) {
+        if(emptySlot >= emptyNeeded) {
                 return true;
         } else {
             return false;

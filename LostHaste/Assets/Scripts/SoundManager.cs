@@ -12,8 +12,7 @@ public class SoundManager : MonoBehaviour
     }
 
     // --- SOUNDS --- //
-    public AudioSource dropItemSound;
-    public AudioSource pickupItemSound;
+    public AudioSource itemSound;
     public AudioSource craftingSound;
     public AudioSource toolSwingSound;
     public AudioSource chopSound;

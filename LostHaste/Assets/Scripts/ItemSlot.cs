@@ -23,7 +23,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
         if(!Item) {
 
             //sound
-            SoundManager.Instance.playSound(SoundManager.Instance.dropItemSound);
+            SoundManager.Instance.playSound(SoundManager.Instance.itemSound);
 
             DragAndDrop.itemBeingDragged.transform.SetParent(transform);
             DragAndDrop.itemBeingDragged.transform.localPosition = new Vector2(0,0);

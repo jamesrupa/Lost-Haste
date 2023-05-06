@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 547c5238c5041e14c9d7c3311b754aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebd06dba67a3abe43b20d67d1e0d7cc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -118,8 +118,11 @@ MonoBehaviour:
   isTrashable: 1
   thisName: Stick
   thisDescription: A wooden stick from a tree.
-  thisFunctionality: Used to craft items.
+  thisFunctionality: Used to craft tools.
   isConsumable: 0
   healthEffect: 0
   hungerEffect: 0
   hydrationEffect: 0
+  isEquippable: 0
+  isInsideQuickSlot: 0
+  isSelected: 0

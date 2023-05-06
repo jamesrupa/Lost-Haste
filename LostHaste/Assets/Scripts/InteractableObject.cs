@@ -19,7 +19,7 @@ public class InteractableObject : MonoBehaviour
         // item pickup with E when player is in range & mouse is on object
         if(Input.GetKeyDown(KeyCode.E) && playerInRange && SelectionManager.Instance.onTarget && SelectionManager.Instance.selectedObject == gameObject) {
             // if inventory isn't full
-            if(!InventorySystem.Instance.CheckIfFull()) {
+            if(InventorySystem.Instance.CheckSlotsAvaliable(1)) {
                 Debug.Log("Item Added to Inventory");
                 InventorySystem.Instance.AddToInventory(ItemName);
                 Destroy(gameObject); 
