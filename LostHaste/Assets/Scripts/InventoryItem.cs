@@ -33,7 +33,6 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public bool isSelected; // tool equipped
 
     public bool isUsable; // able to create into the world
-    public GameObject itemPendingToBeUsed;
  
  
     private void Start()
@@ -86,7 +85,9 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             }
 
             if(isUsable) {
-                itemPendingToBeUsed = gameObject;
+
+                ConstructionManager.Instance.itemToBeDestroyed = gameObject;
+                gameObject.SetActive(false);
 
                 UseItem();
             }
@@ -105,11 +106,7 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 InventorySystem.Instance.ReCalculateList();
                 CraftingSystem.Instance.RefreshNeededItems();
             }
-            if(isUsable && itemPendingToBeUsed == gameObject) {
-                DestroyImmediate(gameObject);
-                InventorySystem.Instance.ReCalculateList();
-                CraftingSystem.Instance.RefreshNeededItems();
-            }
+    
         }
     }
  
@@ -150,6 +147,13 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 break;
             case "Foundation":
                 ConstructionManager.Instance.ActivateConstructionPlacement("FoundationModel"); // testing method
+                break;
+
+            case "Wall(Clone)":
+                ConstructionManager.Instance.ActivateConstructionPlacement("WallModel");
+                break;
+            case "Wall":
+                ConstructionManager.Instance.ActivateConstructionPlacement("WallModel"); // testing method
                 break;
             default:
                 // nothing

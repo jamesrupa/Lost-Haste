@@ -7,6 +7,7 @@ public class EquipableItem : MonoBehaviour
 {
 
     public Animator animator;
+    private bool swingWait = false;
 
 
     // Start is called before the first frame update
@@ -22,13 +23,24 @@ public class EquipableItem : MonoBehaviour
         
         // left mouse button - interact with equipped item
         // when no menus are open
-        if(Input.GetMouseButtonDown(0) && InventorySystem.Instance.isOpen == false && CraftingSystem.Instance.isOpen == false && SelectionManager.Instance.handIsVisible == false) {
-            
+        if(Input.GetMouseButtonDown(0) && 
+        InventorySystem.Instance.isOpen == false && 
+        CraftingSystem.Instance.isOpen == false && 
+        SelectionManager.Instance.handIsVisible == false && 
+        swingWait == false && 
+        !ConstructionManager.Instance.inConstructionMode) {
+            swingWait = true;
             StartCoroutine(SwingSoundDelay());
 
             animator.SetTrigger("swing");
+            StartCoroutine(newSwingDelay());
         }
 
+    }
+
+    IEnumerator newSwingDelay() {
+        swingWait = false;
+        yield return new WaitForSeconds(0.5f);
     }
 
     IEnumerator SwingSoundDelay() {

@@ -65,7 +65,7 @@ public class InventorySystem : MonoBehaviour
     {
         // I - inventory keybind
         // when pressed --> inventory opens
-        if(Input.GetKeyDown(KeyCode.I) && !isOpen) {
+        if(Input.GetKeyDown(KeyCode.I) && !isOpen && !ConstructionManager.Instance.inConstructionMode) {
             Debug.Log("I pressed");
             inventoryScreenUI.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
