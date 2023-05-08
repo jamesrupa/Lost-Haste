@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource chopSound;
     public AudioSource grassWalkSound;
     
+    // --- MUSIC --- //
+    public AudioSource gameMusic;
 
     private void Awake() {
         if(Instance != null && Instance != this) {

@@ -31,6 +31,9 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public bool isInsideQuickSlot; // equipped in quick slot
     // ^ very similar variables
     public bool isSelected; // tool equipped
+
+    public bool isUsable; // able to create into the world
+    public GameObject itemPendingToBeUsed;
  
  
     private void Start()
@@ -81,6 +84,12 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
                 EquipSystem.Instance.AddToQuickSlots(gameObject);
                 isInsideQuickSlot = true;
             }
+
+            if(isUsable) {
+                itemPendingToBeUsed = gameObject;
+
+                UseItem();
+            }
         }
 
     }
@@ -92,6 +101,11 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         {
             if (isConsumable && itemPendingConsumption == gameObject)
             {
+                DestroyImmediate(gameObject);
+                InventorySystem.Instance.ReCalculateList();
+                CraftingSystem.Instance.RefreshNeededItems();
+            }
+            if(isUsable && itemPendingToBeUsed == gameObject) {
                 DestroyImmediate(gameObject);
                 InventorySystem.Instance.ReCalculateList();
                 CraftingSystem.Instance.RefreshNeededItems();
@@ -109,6 +123,38 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
  
         hydrationEffectCalculation(hydrationEffect);
  
+    }
+
+    private void UseItem() {
+        itemInfoUI.SetActive(false);
+
+        InventorySystem.Instance.isOpen = false;
+        InventorySystem.Instance.inventoryScreenUI.SetActive(false);
+
+        CraftingSystem.Instance.isOpen = false;
+        CraftingSystem.Instance.craftingScreenUI.SetActive(false);
+        CraftingSystem.Instance.toolsScreenUI.SetActive(false);
+        CraftingSystem.Instance.refineScreenUI.SetActive(false);
+        CraftingSystem.Instance.constructionScreenUI.SetActive(false);
+        CraftingSystem.Instance.healthScreenUI.SetActive(false);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        SelectionManager.Instance.EnableSelection();
+        SelectionManager.Instance.enabled = true;
+
+        switch(gameObject.name) {
+            case "Foundation(Clone)":
+                ConstructionManager.Instance.ActivateConstructionPlacement("FoundationModel");
+                break;
+            case "Foundation":
+                ConstructionManager.Instance.ActivateConstructionPlacement("FoundationModel"); // testing method
+                break;
+            default:
+                // nothing
+                break;
+        }
     }
  
  
@@ -173,6 +219,5 @@ public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             }
         }
     }
- 
  
 }

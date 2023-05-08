@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        if(lastPosition != gameObject.transform.position) {
+        if(lastPosition != gameObject.transform.position && isGrounded == true) {
             isMoving = true;
             SoundManager.Instance.playSound(SoundManager.Instance.grassWalkSound);
         } else {
