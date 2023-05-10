@@ -28,7 +28,7 @@ public class SettingsManager : MonoBehaviour
     private void Start() {
         ApplyButton.onClick.AddListener(() => 
         {
-            MainMenuSaveManager.Instance.SaveVolumeSettings(musicSlider.value, effectsSlider.value, masterSlider.value);
+            SaveManager.Instance.SaveVolumeSettings(musicSlider.value, effectsSlider.value, masterSlider.value);
         });
 
         StartCoroutine(LoadAndApplySettings());
@@ -45,7 +45,7 @@ public class SettingsManager : MonoBehaviour
 
     private void LoadAndSetVolume()
     {
-        MainMenuSaveManager.VolumeSettings volumeSettings = MainMenuSaveManager.Instance.LoadVolumeSettings();
+        SaveManager.VolumeSettings volumeSettings = SaveManager.Instance.LoadVolumeSettings();
 
         // set volume settings
         masterSlider.value = volumeSettings.master;
