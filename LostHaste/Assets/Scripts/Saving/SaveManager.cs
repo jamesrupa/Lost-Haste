@@ -26,6 +26,22 @@ public class SaveManager : MonoBehaviour
     // variables
     public bool isSavingToJson;
 
+    // binary save path
+    string binaryPath;
+    // json project save path
+    // used when working on project through unity
+    string jsonPathProject;
+    // json external save path --> on pc files where game will be played
+    // use when build and create executable
+    string jsonPathPersistant;
+
+
+    private void Start() {
+        binaryPath = Application.persistentDataPath + "/save_game.bin";
+        jsonPathProject = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveGame.json";
+        jsonPathPersistant = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveGame.json";
+    }
+
     #region  || --- GENERAL SECTION --- ||
 
     #region  || --- SAVING SECTION --- ||
@@ -55,7 +71,7 @@ public class SaveManager : MonoBehaviour
     }
     public void SavingTypeSwitch(AllGameData gameData) {
         if(isSavingToJson) {
-            // SaveGameDataToJsonFile(gameData);
+            SaveGameDataToJsonFile(gameData);
         } else {
             SaveGameDataToBinaryFile(gameData);
         }
@@ -67,7 +83,7 @@ public class SaveManager : MonoBehaviour
 
     public AllGameData LoadingTypeSwitch() {
         if(isSavingToJson) {
-            AllGameData gameData = LoadGameDataFromBinaryFile();
+            AllGameData gameData = LoadGameDataFromJsonFile();
             return gameData;
         } else {
             AllGameData gameData = LoadGameDataFromBinaryFile();
@@ -126,26 +142,24 @@ public class SaveManager : MonoBehaviour
     public void SaveGameDataToBinaryFile(AllGameData gameData) {
         BinaryFormatter formatter = new BinaryFormatter();
 
-        string path = Application.persistentDataPath + "/save_game.bin";
-        FileStream stream = new FileStream(path, FileMode.Create);
+        FileStream stream = new FileStream(binaryPath, FileMode.Create);
 
         formatter.Serialize(stream, gameData);
         stream.Close();
 
-        print("DATA SAVED TO " + Application.persistentDataPath + "/save_game.bin");
+        print("DATA SAVED TO " + binaryPath);
     }
 
     public AllGameData LoadGameDataFromBinaryFile() {
-        string path = Application.persistentDataPath + "/save_game.bin";
 
-        if(File.Exists(path)) {
+        if(File.Exists(binaryPath)) {
             BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            FileStream stream = new FileStream(binaryPath, FileMode.Open);
 
             AllGameData data = formatter.Deserialize(stream) as AllGameData;
             stream.Close();
 
-            print("DATA LOADED FROM " + Application.persistentDataPath + "/save_game.bin");
+            print("DATA LOADED FROM " + binaryPath);
 
             return data;
         } else {
@@ -158,12 +172,48 @@ public class SaveManager : MonoBehaviour
     #region  || --- TO JSON SECTION --- ||
 
     public void SaveGameDataToJsonFile(AllGameData gameData) {
+        string json = JsonUtility.ToJson(gameData);
         
+        // encryption
+        string encrypted = EncryptionDecryption(json);
+
+        using(StreamWriter writer = new StreamWriter(jsonPathProject)) {
+            writer.Write(encrypted);
+            print("SAVED GAME TO JSON FILE AT: " + jsonPathProject);
+        };
     }
 
     public AllGameData LoadGameDataFromJsonFile() {
-        return null;
+        using(StreamReader reader = new StreamReader(jsonPathProject)) {
+            string json = reader.ReadToEnd();
+
+            // decrypt
+            string decrypted = EncryptionDecryption(json);
+
+            AllGameData data = JsonUtility.FromJson<AllGameData>(decrypted);
+            return data;
+        };
     }
+
+    // --- JSON ENCRYPTION --- //
+
+    public string EncryptionDecryption(string jsonString) {
+
+        string keyword = "cisc4900_2023";
+        // :) Thanks for the great semester
+        // Had a blast working on this project & can't wait to see what the future holds
+        // Thanks for all the help & have a great summer
+        string result = "";
+
+        for(int i = 0; i < jsonString.Length; i++) {
+            result += (char)(jsonString[i] ^ keyword[i % keyword.Length]);
+        }
+
+        return result; // encryption or decryption string
+
+        // ^ = XOR --> "is the difference of"
+    }
+
 
     #endregion
 
