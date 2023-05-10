@@ -62,7 +62,4 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public void tempSaveGame() {
-        SaveManager.Instance.SaveGame();
-    }
 }
