@@ -22,6 +22,7 @@ public class InteractableObject : MonoBehaviour
             if(InventorySystem.Instance.CheckSlotsAvaliable(1)) {
                 Debug.Log("Item Added to Inventory");
                 InventorySystem.Instance.AddToInventory(ItemName);
+                InventorySystem.Instance.itemsPickedUp.Add(gameObject.name);
                 Destroy(gameObject); 
             } else {
                 Debug.Log("Inventory Full");

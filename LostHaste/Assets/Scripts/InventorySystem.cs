@@ -20,6 +20,7 @@ public class InventorySystem : MonoBehaviour
 
     public List<GameObject> slotList = new List<GameObject>();
     public List<string> itemList = new List<string>();
+    public List<string> itemsPickedUp;
 
     private GameObject itemToAdd;
     private GameObject whatSlotToEquip;
@@ -90,7 +91,9 @@ public class InventorySystem : MonoBehaviour
     }
 
     public void AddToInventory(string itemName) {
-        SoundManager.Instance.playSound(SoundManager.Instance.itemSound);
+        if(!SaveManager.Instance.isLoading) {
+            SoundManager.Instance.playSound(SoundManager.Instance.itemSound);
+        }
 
         whatSlotToEquip = FindNextEmptySlot();
 

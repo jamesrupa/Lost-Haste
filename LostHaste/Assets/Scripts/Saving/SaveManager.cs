@@ -37,6 +37,10 @@ public class SaveManager : MonoBehaviour
 
     string fileName = "SaveGame";
 
+    public bool isLoading;
+
+    public Canvas loadingScreen;
+
 
     private void Start() {
         binaryPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar;
@@ -51,7 +55,16 @@ public class SaveManager : MonoBehaviour
         AllGameData data = new AllGameData();
 
         data.playerData = GetPlayerData();
+        data.environmentData = GetEnvironmentData();
+
         SavingTypeSwitch(data, slotNumber);
+    }
+
+    private EnvironmentData GetEnvironmentData()
+    {
+        List<string> itemsPickedUp = InventorySystem.Instance.itemsPickedUp;
+
+        return new EnvironmentData(itemsPickedUp);
     }
 
     private PlayerData GetPlayerData() {
@@ -68,9 +81,29 @@ public class SaveManager : MonoBehaviour
         playerPosAndRot[4] = PlayerState.Instance.player.transform.rotation.y;
         playerPosAndRot[5] = PlayerState.Instance.player.transform.rotation.z;
 
-        return new PlayerData(playerStats, playerPosAndRot);
+        string[] inventory = InventorySystem.Instance.itemList.ToArray();
+
+        string[] quickSlots = GetQuickSlotsContent();
+
+        return new PlayerData(playerStats, playerPosAndRot, inventory, quickSlots);
 
     }
+
+    private string[] GetQuickSlotsContent()
+    {
+        List<string> temp = new List<string>();
+
+        foreach(GameObject slot in EquipSystem.Instance.quickSlotsList) {
+            if(slot.transform.childCount != 0) {
+                string name = slot.transform.GetChild(0).name;
+                string str2 = "(Clone)";
+                string cleanName = name.Replace(str2, "");
+                temp.Add(cleanName);
+            }
+        }
+        return temp.ToArray();
+    }
+
     public void SavingTypeSwitch(AllGameData gameData, int slotNumber) {
         if(isSavingToJson) {
             SaveGameDataToJsonFile(gameData, slotNumber);
@@ -98,6 +131,23 @@ public class SaveManager : MonoBehaviour
         // player data
         SetPlayerData(LoadingTypeSwitch(slotNumber).playerData);
         // environment data
+        SetEnvironmentData(LoadingTypeSwitch(slotNumber).environmentData);
+
+        isLoading = false;
+
+        DisableLoadingScreen();
+    }
+
+    private void SetEnvironmentData(EnvironmentData environmentData) {
+        foreach(Transform itemType in EnvironmentManager.Instance.allItems.transform) {
+            foreach(Transform item in itemType.transform) {
+                if(environmentData.pickedUpItems.Contains(item.name)) {
+                    Destroy(item.gameObject);
+                }
+            }
+        }
+        // repopulates inventory system list
+        InventorySystem.Instance.itemsPickedUp = environmentData.pickedUpItems;
     }
 
     private void SetPlayerData(PlayerData playerData)
@@ -121,9 +171,24 @@ public class SaveManager : MonoBehaviour
 
         PlayerState.Instance.player.transform.rotation = Quaternion.Euler(loadedRotation);
 
+        // inventory
+        foreach(string item in playerData.inventoryContent) {
+            InventorySystem.Instance.AddToInventory(item);
+        }
+
+        // quick slots
+        foreach(string item in playerData.quickSlotsContent) {
+            GameObject avaliableSlot = EquipSystem.Instance.FindNextEmptySlot();
+            var itemToAdd = Instantiate(Resources.Load<GameObject>(item));
+            itemToAdd.transform.SetParent(avaliableSlot.transform, false);
+        }
+
+        isLoading = false;
     }
 
     public void StartLoadedGame(int slotNumber) {
+        ActivateLoadingScreen();
+        isLoading = true;
         SceneManager.LoadScene("GameScene");
 
         StartCoroutine(DelayedLoading(slotNumber));
@@ -276,6 +341,25 @@ public class SaveManager : MonoBehaviour
     public void DeselectButton() {
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+    }
+
+    #endregion
+
+    #region  || --- LOADING SCREEN SECTION --- ||
+
+    public void ActivateLoadingScreen() {
+        loadingScreen.gameObject.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        // music while loading
+        // animation
+        // show
+    }
+
+    public void DisableLoadingScreen() {
+        loadingScreen.gameObject.SetActive(false);
     }
 
     #endregion
