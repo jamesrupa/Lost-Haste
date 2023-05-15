@@ -66,9 +66,9 @@ public class PlayerState : MonoBehaviour
 
 
         //test for status bars
-        if(Input.GetKeyDown(KeyCode.N)) {
-            currentHealth -= 10;
-        }
+        //if(Input.GetKeyDown(KeyCode.N)) {
+            //currentHealth -= 10;
+        //}
     }
 
     public void setHealth(float newHealth) {

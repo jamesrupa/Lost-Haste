@@ -19,10 +19,10 @@ public class CraftingSystem : MonoBehaviour
     Button toolsBTN, refineBTN, constructionBTN, healthBTN;
 
     // Craft Buttons
-    Button craftAxeBTN, craftPlankBTN, craftFoundationBTN, craftWallBTN;
+    Button craftAxeBTN, craftPlankBTN, craftFoundationBTN, craftWallBTN, craftMushBTN;
     
     // requirement text
-    Text axeReqOne, axeReqTwo, plankReq1, foundationReq1, wallReq1;
+    Text axeReqOne, axeReqTwo, plankReq1, foundationReq1, wallReq1, mushReq1;
 
     public bool isOpen;
 
@@ -32,6 +32,7 @@ public class CraftingSystem : MonoBehaviour
     public CraftingBlueprint PlankBLP = new CraftingBlueprint("Plank", 2, 1, "Log", 1, "", 0);
     public CraftingBlueprint FoundationBLP = new CraftingBlueprint("Foundation", 1, 1, "Plank", 4, "", 0);
     public CraftingBlueprint WallBLP = new CraftingBlueprint("Wall", 1, 1, "Plank", 2, "", 0);
+    public CraftingBlueprint MushBLP = new CraftingBlueprint("Mushroom Soup", 1, 1, "Mushroom", 3, "", 0);
 
 
     public static CraftingSystem Instance {get; set;}
@@ -86,6 +87,12 @@ public class CraftingSystem : MonoBehaviour
 
         craftWallBTN = constructionScreenUI.transform.Find("Wall").transform.Find("Button").GetComponent<Button>();
         craftWallBTN.onClick.AddListener(delegate{craftAnyItem(WallBLP);});
+
+        // MUSHROOM REQUIREMENTS
+        mushReq1 = healthScreenUI.transform.Find("MushroomSoup").transform.Find("Req1").GetComponent<Text>();
+
+        craftMushBTN = healthScreenUI.transform.Find("MushroomSoup").transform.Find("Button").GetComponent<Button>();
+        craftMushBTN.onClick.AddListener(delegate{craftAnyItem(MushBLP);});
 
     }
 
@@ -202,6 +209,7 @@ public class CraftingSystem : MonoBehaviour
         int stick_count = 0;
         int log_count = 0;
         int plank_count = 0;
+        int mush_count = 0;
 
         inventoryItemList = InventorySystem.Instance.itemList;
 
@@ -218,6 +226,9 @@ public class CraftingSystem : MonoBehaviour
                     break;
                 case "Plank":
                     plank_count += 1;
+                    break;
+                case "Mushroom":
+                    mush_count += 1;
                     break;
             }
         }
@@ -258,6 +269,15 @@ public class CraftingSystem : MonoBehaviour
             craftWallBTN.gameObject.SetActive(true);
         } else {
             craftWallBTN.gameObject.SetActive(false);
+        }
+
+        // --- M U S H R O O M   S O U P --- //
+        mushReq1.text = "3 Mushroom [" + mush_count + "]";
+
+        if(mush_count >= 3 && InventorySystem.Instance.CheckSlotsAvaliable(1)) {
+            craftMushBTN.gameObject.SetActive(true);
+        } else {
+            craftMushBTN.gameObject.SetActive(false);
         }
 
     }
