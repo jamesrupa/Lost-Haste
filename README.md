@@ -89,9 +89,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-James Rupa - [@jamesrupa](https://https://www.linkedin.com/in/jamesrupa/) - jamesjrupa@gmail.com
+James Rupa - [@jamesrupa](https://www.linkedin.com/in/jamesrupa/) - jamesjrupa@gmail.com
 
-Project Link: [https://https://github.com/jamesrupa/Lost-Haste](https://https://github.com/jamesrupa/Lost-Haste)
+Project Link: [https://github.com/jamesrupa/Lost-Haste](https://github.com/jamesrupa/Lost-Haste)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
